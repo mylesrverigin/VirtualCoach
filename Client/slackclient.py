@@ -46,4 +46,7 @@ class SlackCLient():
         return 
             (int) if not a string return -1 
         """
-        self.chan = chan
+        if isinstance(chan,str):
+            self.chan = chan
+        else:
+            return -1
